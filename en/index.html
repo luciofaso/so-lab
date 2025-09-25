@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,96 +16,6 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-        }
-
-        /* Language Selector */
-        .language-selector {
-            position: fixed;
-            top: 80px;
-            right: 2rem;
-            z-index: 1100;
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .lang-option {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.5rem 0.8rem;
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid #e0e0e0;
-            border-radius: 20px;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .lang-option:hover {
-            background: rgba(37, 99, 235, 0.1);
-            border-color: #2563EB;
-            transform: translateY(-2px);
-        }
-
-        .lang-option.active {
-            background: linear-gradient(135deg, #2563EB 0%, #FBBF24 100%);
-            color: white;
-            border-color: transparent;
-        }
-
-        .flag {
-            width: 20px;
-            height: 15px;
-            border-radius: 2px;
-            display: inline-block;
-        }
-
-        .flag.fr {
-            background: linear-gradient(to right, #0055a4 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ef4135 66.66%);
-        }
-
-        .flag.it {
-            background: linear-gradient(to right, #009246 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ce2b37 66.66%);
-        }
-
-        .flag.en {
-            background: #012169;
-            position: relative;
-        }
-
-        .flag.en::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                linear-gradient(45deg, transparent 40%, #ffffff 40%, #ffffff 45%, transparent 45%),
-                linear-gradient(-45deg, transparent 40%, #ffffff 40%, #ffffff 45%, transparent 45%),
-                linear-gradient(45deg, transparent 55%, #ffffff 55%, #ffffff 60%, transparent 60%),
-                linear-gradient(-45deg, transparent 55%, #ffffff 55%, #ffffff 60%, transparent 60%);
-        }
-
-        .flag.en::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                linear-gradient(45deg, transparent 30%, #c8102e 30%, #c8102e 35%, transparent 35%),
-                linear-gradient(-45deg, transparent 30%, #c8102e 30%, #c8102e 35%, transparent 35%),
-                linear-gradient(45deg, transparent 65%, #c8102e 65%, #c8102e 70%, transparent 70%),
-                linear-gradient(-45deg, transparent 65%, #c8102e 65%, #c8102e 70%, transparent 70%),
-                linear-gradient(0deg, transparent 43%, #ffffff 43%, #ffffff 57%, transparent 57%),
-                linear-gradient(90deg, transparent 43%, #ffffff 43%, #ffffff 57%, transparent 57%),
-                linear-gradient(0deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%),
-                linear-gradient(90deg, transparent 46%, #c8102e 46%, #c8102e 54%, transparent 54%);
         }
 
         /* Logo Section - NEW */
@@ -392,7 +302,7 @@
             font-weight: 700;
         }
 
-        /* Two Column Section - Pourquoi la Sociocratie */
+        /* Two Column Section */
         .two-column-section {
             background: white;
         }
@@ -774,21 +684,6 @@
 </head>
 
 <body>
-    <!-- Language Selector -->
-    <div class="language-selector">
-        <a href="index.html" class="lang-option active">
-            <span class="flag fr"></span>
-            <span>FR</span>
-        </a>
-        <a href="it/index.html" class="lang-option">
-            <span class="flag it"></span>
-            <span>IT</span>
-        </a>
-        <a href="en/index.html" class="lang-option">
-            <span class="flag en"></span>
-            <span>EN</span>
-        </a>
-    </div>
     <!-- Header -->
     <header>
         <nav>
@@ -803,17 +698,17 @@
                 <span class="nav-logo-text"><span class="so">So</span><span class="lab">Lab</span></span>
             </a>
             <ul class="nav-links">
-                <li><a href="#sociocratie">Sociocratie</a></li>
-                <li><a href="#about">Qui suis-je</a></li>
-                <li><a href="#methode">Méthode</a></li>
-                <li><a href="#processus">Processus</a></li>
-                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#sociocracy">Sociocracy</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
             </ul>
-            <a href="#contact" class="cta-nav">Démarrer</a>
+            <a href="#contact" class="cta-nav">Get Started</a>
         </nav>
     </header>
 
-    <!-- Logo Showcase Section - NEW -->
+    <!-- Logo Showcase Section -->
     <section class="logo-showcase">
         <div class="logo-container">
             <div class="logo">
@@ -834,61 +729,59 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1><span class="small-text">Abandonnez les vieux schémas.</span>Expérimentez la force de la Sociocratie.
+            <h1><span class="small-text">Drop the old patterns.</span>Experience the power of Sociocracy.
             </h1>
-            <p class="subtitle">Accompagnement expert et conseil pour l'adoption de pratiques sociocratiques dans votre
-                organisation. Transformez votre façon de collaborer, de prendre des décisions et de libérer le potentiel
-                de chacun·e.</p>
-            <a href="#contact" class="cta-button">Commencer l'Expérience</a>
+            <p class="subtitle">Expert guidance and consulting for adopting sociocratic practices in your
+                organization. Transform how you collaborate, make decisions, and unleash everyone's potential.</p>
+            <a href="#contact" class="cta-button">Start the Experiment</a>
         </div>
     </section>
 
-    <!-- Two Column Section - Pourquoi la Sociocratie -->
-    <section class="two-column-section" id="sociocratie">
+    <!-- Two Column Section - Why Sociocracy -->
+    <section class="two-column-section" id="sociocracy">
         <div class="container">
             <div class="two-columns">
                 <div class="left-column">
-                    <h2>Pourquoi la Sociocratie ?</h2>
-                    <p>Beaucoup d'organisations restent figées dans des structures hiérarchiques rigides, qui freinent
-                        créativité, engagement et initiative. Les personnes se sentent désemparées, les décisions sont
-                        lentes, et l'innovation en souffre.</p>
-                    <p>La sociocratie, née aux Pays-Bas et utilisée dans le monde entier, est une technologie sociale
-                        qui propose des pratiques éprouvées pour une collaboration plus efficace et inclusive : pouvoir
-                        partagé, écoute de chacun·e.</p>
-                    <p>Avec Sociocratie 3.0, la version moderne et agile, nous aidons les organisations à libérer le
-                        potentiel de chacun·e, pour innover ensemble et s'adapter rapidement aux changements.</p>
+                    <h2>Why Sociocracy?</h2>
+                    <p>Many organizations remain stuck in rigid hierarchical structures that inhibit creativity,
+                        engagement, and initiative. People feel disempowered, decisions are slow, and innovation
+                        suffers.</p>
+                    <p>Sociocracy, born in the Netherlands and used worldwide, is a social technology that offers proven
+                        practices for more effective and inclusive collaboration: shared power, listening to everyone.
+                    </p>
+                    <p>With Sociocracy 3.0, the modern and agile version, we help organizations unlock everyone's
+                        potential, to innovate together and adapt quickly to change.</p>
                 </div>
                 <div class="right-column">
                     <div class="principle-item">
                         <div class="principle-icon">⚡</div>
                         <div class="principle-content">
-                            <h3>Équipes auto-organisées</h3>
-                            <p>Équipes auto-organisées avec un objectif clair et l'autorité de prendre des décisions
-                                dans leur domaine.</p>
+                            <h3>Self-organizing teams</h3>
+                            <p>Self-organizing teams with a clear purpose and the authority to make decisions in their
+                                domain.</p>
                         </div>
                     </div>
                     <div class="principle-item">
                         <div class="principle-icon">🔗</div>
                         <div class="principle-content">
-                            <h3>Connexion bidirectionnelle</h3>
-                            <p>Connexion bidirectionnelle entre les cercles assurant que l'information circule dans
-                                toute l'organisation.</p>
+                            <h3>Bidirectional connection</h3>
+                            <p>Bidirectional connection between circles ensuring information flows throughout the
+                                organization.</p>
                         </div>
                     </div>
                     <div class="principle-item">
                         <div class="principle-icon">✅</div>
                         <div class="principle-content">
-                            <h3>Décisions par consentement</h3>
-                            <p>Les décisions avancent quand il n'y a pas d'objections motivées, s'assurant que la voix
-                                de chacun·e compte.</p>
+                            <h3>Consent decision making</h3>
+                            <p>Decisions move forward when there are no reasoned objections, ensuring everyone's voice
+                                counts.</p>
                         </div>
                     </div>
                     <div class="principle-item">
                         <div class="principle-icon">👥</div>
                         <div class="principle-content">
-                            <h3>Sélection transparente</h3>
-                            <p>Processus transparent pour sélectionner les personnes pour les rôles basé sur la
-                                compétence et l'adéquation.</p>
+                            <h3>Transparent selection</h3>
+                            <p>Transparent process for selecting people for roles based on competence and fit.</p>
                         </div>
                     </div>
                 </div>
@@ -901,40 +794,39 @@
         <div class="container">
             <div class="two-columns">
                 <div class="left-column">
-                    <h2>Qui suis-je ?</h2>
-                    <h3>Je m'appelle Luciano Raso</h3>
-                    <p><strong>Ma mission :</strong> Je reconnais le besoin et les difficultés d'être et construire
-                        ensemble, et je m'engage pour accompagner les individus et les organisations pour construire un
-                        monde plus démocratique et communautaire à travers la sociocratie.</p>
-                    <p><strong>Mes expériences :</strong> Formé à la sociocratie par Sociocracy for All, j'accompagne
-                        plusieurs organisations vers la gouvernance sociocratique, en France et Italie.</p>
-                    <p><strong>Mon approche :</strong> Mon background de chercheur avec une expertise en analyse des
-                        systèmes complexes me permet d'accompagner les organisations avec une approche structurée et
-                        directe, en éclairant les nuances et conséquences de chaque choix organisationnel.</p>
+                    <h2>Who am I?</h2>
+                    <h3>My name is Luciano Raso</h3>
+                    <p><strong>My mission:</strong> I recognize the need and difficulties of being and building
+                        together, and I'm committed to accompanying individuals and organizations to build a more
+                        democratic and community-oriented world through sociocracy.</p>
+                    <p><strong>My experience:</strong> Trained in sociocracy by Sociocracy for All, I accompany several
+                        organizations towards sociocratic governance, in France and Italy.</p>
+                    <p><strong>My approach:</strong> My research background with expertise in complex systems analysis
+                        allows me to accompany organizations with a structured and direct approach, illuminating the
+                        nuances and consequences of each organizational choice.</p>
                 </div>
                 <div class="right-column">
                     <div class="approach-highlight">
-                        <h3>Pourquoi choisir SoLab ?</h3>
+                        <h3>Why choose SoLab?</h3>
                         <div class="highlight-point">
                             <div class="highlight-icon">🔬</div>
                             <div class="highlight-text">
-                                <h4>Approche Scientifique</h4>
-                                <p>Background de recherche en systèmes complexes appliqué à l'organisation collective
-                                </p>
+                                <h4>Scientific Approach</h4>
+                                <p>Research background in complex systems applied to collective organization</p>
                             </div>
                         </div>
                         <div class="highlight-point">
                             <div class="highlight-icon">🎯</div>
                             <div class="highlight-text">
-                                <h4>Méthode Structurée</h4>
-                                <p>Accompagnement direct et organisé, adapté aux besoins des entreprises</p>
+                                <h4>Structured Method</h4>
+                                <p>Direct and organized guidance, adapted to business needs</p>
                             </div>
                         </div>
                         <div class="highlight-point">
                             <div class="highlight-icon">🌍</div>
                             <div class="highlight-text">
-                                <h4>Expérience Internationale</h4>
-                                <p>Interventions en France et Italie, adaptation culturelle</p>
+                                <h4>International Experience</h4>
+                                <p>Interventions in France and Italy, cultural adaptation</p>
                             </div>
                         </div>
                     </div>
@@ -944,54 +836,54 @@
     </section>
 
     <!-- Method Section -->
-    <section class="method-section" id="methode">
+    <section class="method-section" id="method">
         <div class="container">
-            <h2 class="section-title">Notre Méthode</h2>
+            <h2 class="section-title">Our Method</h2>
             <div class="method-grid">
                 <div class="method-card">
                     <div class="method-number">1</div>
-                    <h3>Diagnostic</h3>
-                    <p>Nous commençons par comprendre vos défis actuels et concevons une feuille de route sur mesure
-                        pour implémenter les pratiques sociocratiques dans votre contexte spécifique.</p>
+                    <h3>Diagnosis</h3>
+                    <p>We start by understanding your current challenges and design a tailored roadmap for implementing
+                        sociocratic practices in your specific context.</p>
                 </div>
                 <div class="method-card">
                     <div class="method-number">2</div>
-                    <h3>Accompagnement</h3>
-                    <p>Guidance étape par étape à travers le processus d'adoption, avec facilitation pratique et
-                        coaching pour assurer des transitions en douceur.</p>
+                    <h3>Guidance</h3>
+                    <p>Step-by-step guidance through the adoption process, with hands-on facilitation and coaching to
+                        ensure smooth transitions.</p>
                 </div>
                 <div class="method-card">
                     <div class="method-number">3</div>
-                    <h3>Suivi</h3>
-                    <p>Soutien continu à travers des points réguliers, formation avancée, et adaptation basée sur vos
-                        besoins évolutifs et apprentissages.</p>
+                    <h3>Follow-up</h3>
+                    <p>Ongoing support through regular check-ins, advanced training, and adaptation based on your
+                        evolving needs and learnings.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section class="process-section" id="processus">
+    <section class="process-section" id="process">
         <div class="container">
-            <h2 class="section-title">Comment ça marche ?</h2>
+            <h2 class="section-title">How does it work?</h2>
             <div class="process-grid">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <h3>Exploration</h3>
-                    <p>Tout commence par votre besoin de changement et le courage d'explorer des modes de gouvernance
-                        plus collaboratifs et inclusifs comme la sociocratie.</p>
+                    <p>It all starts with your need for change and the courage to explore more collaborative and
+                        inclusive governance modes like sociocracy.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
-                    <h3>Conception</h3>
-                    <p>Nous explorons ensemble votre réalité actuelle, vos ressources et vos ambitions pour concevoir
-                        une trajectoire sur mesure du point A au point B.</p>
+                    <h3>Design</h3>
+                    <p>We explore your current reality, resources, and ambitions together to design a tailored
+                        trajectory from point A to point B.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">3</div>
-                    <h3>Implémentation</h3>
-                    <p>Nous implémentons de petits changements dans une dynamique agile, faite de petites
-                        implémentations et d'apprentissage continu, découvrant ce qui fonctionne pour vous.</p>
+                    <h3>Implementation</h3>
+                    <p>We implement small changes in an agile dynamic, made of small implementations and continuous
+                        learning, discovering what works for you.</p>
                 </div>
             </div>
         </div>
@@ -1001,31 +893,31 @@
     <section class="approach-section">
         <div class="container">
             <div class="approach-content">
-                <h2 class="section-title">Notre Approche</h2>
-                <p>Mon rôle est de vous aider à découvrir les pratiques adaptées à vos besoins, en éclairant les nuances
-                    et conséquences de chaque choix.</p>
+                <h2 class="section-title">Our Approach</h2>
+                <p>My role is to help you discover practices adapted to your needs, illuminating the nuances and
+                    consequences of each choice.</p>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials" id="temoignages">
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2 class="section-title">Ce que disent nos clients</h2>
+            <h2 class="section-title">What our clients say</h2>
             <div class="testimonials-grid">
                 <div class="testimonial">
                     <div class="quote">"</div>
-                    <p>Le facilitateur a été très clair, consciencieux et enthousiaste dans sa manière de proposer la
-                        sociocratie au sein de notre jeune organisation. Il a réussi à l'introduire dans un groupe déjà
-                        existant, en minimisant les résistances, en avançant étape par étape, et en expliquant toujours
-                        les concepts avec précision.</p>
+                    <p>The facilitator was very clear, conscientious and enthusiastic in his way of introducing
+                        sociocracy within our young organization. He managed to introduce it into an already existing
+                        group, minimizing resistance, moving step by step, and always explaining concepts with
+                        precision.</p>
                     <div class="author">— Federico Felici, Mankind Project Italia</div>
                 </div>
                 <div class="testimonial">
                     <div class="quote">"</div>
-                    <p>Il a su s'adapter finement à notre culture et à notre rythme. Grâce à son approche progressive et
-                        à son écoute, la sociocratie s'est intégrée naturellement dans notre manière de fonctionner. Sa
-                        présence discrète mais structurante a facilité des changements concrets et durables.</p>
+                    <p>He was able to adapt finely to our culture and our rhythm. Thanks to his progressive approach
+                        and his listening, sociocracy integrated naturally into our way of functioning. His discreet but
+                        structuring presence facilitated concrete and lasting changes.</p>
                     <div class="author">— Damiano Furlan, Uomini Consapevoli</div>
                 </div>
             </div>
@@ -1035,18 +927,17 @@
     <!-- Final CTA -->
     <section class="final-cta" id="contact">
         <div class="container">
-            <h2>Prêt à expérimenter ?</h2>
-            <p>Réservez un appel découverte gratuit de 30 minutes pour explorer comment nous pouvons vous aider à
-                avancer plus rapidement et efficacement vers vos objectifs.</p>
-            <a href="https://calendar.app.google/hSVtyEpByKfQ9cfDA" class="cta-button">Réservez votre appel
-                découverte</a>
+            <h2>Ready to experiment?</h2>
+            <p>Book a free 30-minute discovery call to explore how we can help you move faster and more effectively
+                toward your goals.</p>
+            <a href="https://calendar.app.google/hSVtyEpByKfQ9cfDA" class="cta-button">Book your discovery call</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 SoLab - Sociocracy Laboratory. Tous droits réservés.</p>
+            <p>&copy; 2024 SoLab - Sociocracy Laboratory. All rights reserved.</p>
         </div>
     </footer>
 </body>
